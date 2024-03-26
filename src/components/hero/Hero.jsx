@@ -2,7 +2,7 @@ import React from "react";
 import heroImage from "../../assets/images/banner_img.png";
 function Hero(props) {
   return (
-    <div id="hero">
+    <div id="hero" className="">
       <div className="hero_bg"></div>
       <div className="container hero_content">
         <div className="hero_text">
