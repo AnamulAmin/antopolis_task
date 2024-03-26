@@ -9,7 +9,7 @@
 }
 #hero .hero_bg {
   width: 1767px;
-  height: 924px;
+  height: 992px;
   position: absolute;
   top: -200px;
   left: 50%;
@@ -75,6 +75,9 @@
 @media (min-width: 1024px) {
   #hero {
     padding-bottom: 8rem;
+  }
+  #hero .hero_bg {
+    height: 840px;
   }
   #hero .hero_content .hero_text {
     padding-top: 7rem;
