@@ -143,3 +143,18 @@
 }
 
 /********** categories swiper end ************/
+
+/* media part */
+@media (min-width: 768px) {
+  /* hero area start*/
+  #categories {
+    margin-top: -10rem;
+    width: 100%;
+  }
+  #categories .category_menu .category_name {
+    width: calc(25% - 0.5rem);
+  }
+  #categories .category_menu {
+    flex-wrap: nowrap;
+  }
+}
