@@ -1,6 +1,7 @@
 import teamWorkImage from "../../assets/images/team_work.png";
 import environmentImage from "../../assets/images/enviroment.png";
 import "./get_to_know.css";
+
 function GetToKnow() {
   return (
     <section id="get_to_know">
@@ -25,7 +26,10 @@ function GetToKnow() {
         </div>
       </div>
       {/* environment content area */}
-      <div className="container get_to_know_content environment">
+      <div className="container get_to_know_content">
+        <div className="get_to_know_image">
+          <img src={environmentImage} style={{ width: "100%" }} />
+        </div>
         <div className="get_to_know_text">
           <h3>
             We are all in for the <span>environment </span>
@@ -35,9 +39,6 @@ function GetToKnow() {
             organization that takes care of our enviromet. We belive that with
             everyone´s help, we can make a better world.
           </p>
-        </div>
-        <div className="get_to_know_image">
-          <img src={environmentImage} style={{ width: "100%" }} />
         </div>
       </div>
     </section>
