@@ -54,12 +54,28 @@
   border-radius: 0.5rem;
   background-color: var(--white);
   transition: var(--trans);
+  position: relative;
 }
 #categories .itemCard h2 {
   font-size: 0.9rem;
 }
 #categories .itemCard p {
   font-size: 0.8rem;
+}
+#categories .itemCard .ratting {
+  width: 1.8rem;
+  height: 2.3rem;
+  background-color: var(--yellow);
+  clip-path: polygon(80% 0, 100% 100%, 50% 90%, 0 100%, 20% 0);
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.6rem;
+  justify-content: center;
+  align-items: center;
 }
 #categories .itemCard .card_btn {
   font-size: 1rem;

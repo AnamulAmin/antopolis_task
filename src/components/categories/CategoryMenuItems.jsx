@@ -17,36 +17,42 @@ const data = [
     image: "/pizza1.png",
     type: "Di napoles",
     price: "$11,99",
+    ratting: 5,
   },
   {
     name: "Pepperoni Pizza",
     image: "/pizza2.png",
     type: "Di napoles",
     price: "$13,99",
+    ratting: 4.5,
   },
   {
     name: "Vegetarian Pizza",
     image: "/pizza3.png",
     type: "Cosa di Mario",
     price: "$12,99",
+    ratting: 4.3,
   },
   {
     name: "Mediterranean Pizza",
     image: "/pizza4.png",
     type: "Milano",
     price: "$15,99",
+    ratting: 4,
   },
   {
     name: "Mediterranean Pizza",
     image: "/pizza4.png",
     type: "Milano",
     price: "$15,99",
+    ratting: 5,
   },
   {
     name: "Mediterranean Pizza",
     image: "/pizza4.png",
     type: "Milano",
     price: "$15,99",
+    ratting: 5,
   },
 ];
 
