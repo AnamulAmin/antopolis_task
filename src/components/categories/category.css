@@ -1,0 +1,129 @@
+/********** categories style start ************/
+#categories {
+  margin-top: 0rem;
+  width: 100%;
+}
+#categories .category_menu {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+#categories .category_menu .category_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem 1.3rem;
+  width: calc(50% - 0.5rem);
+  box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.41);
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  transition: var(--trans);
+  cursor: pointer;
+}
+#categories .category_menu .category_name.active,
+#categories .category_menu .category_name:hover {
+  background-color: var(--red);
+  color: var(--white);
+}
+#categories .category_menu .category_name img {
+  width: 1.5rem;
+  transition: var(--trans);
+}
+#categories .category_menu .category_name:hover img,
+#categories .category_menu .category_name.active img {
+  filter: grayscale(100%) invert(100%) brightness(200%);
+}
+#categories .itemCard {
+  width: 100%;
+  min-height: 19rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem 1.3rem;
+  box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.41);
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  transition: var(--trans);
+}
+#categories .itemCard h2 {
+  font-size: 0.9rem;
+}
+#categories .itemCard p {
+  font-size: 0.8rem;
+}
+#categories .itemCard .card_btn {
+  font-size: 1rem;
+  color: var(--white);
+  padding: 0.3rem 0.8rem;
+  background-color: var(--red);
+  border-radius: 0.3rem;
+  margin-bottom: 0.6rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+/********** categories style end ************/
+/********** categories swiper satrt ************/
+
+#categories .category_menu_items {
+  position: relative;
+}
+#categories .swiper-button-next,
+#categories .swiper-button-prev {
+  top: calc(100% - 2rem);
+  z-index: 999;
+}
+#categories .swiper-button-next {
+  left: 70%;
+}
+#categories .swiper-button-prev {
+  left: 22%;
+}
+#categories .swiper-button-next::after,
+#categories .swiper-button-prev::after {
+  font-size: 2rem;
+  color: var(--red);
+}
+#categories .swiper {
+  width: 100%;
+  height: 27rem;
+  padding-bottom: 3rem;
+}
+
+#categories .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#categories .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 1rem;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 1.2rem !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--red) !important;
+}
+
+/********** categories swiper end ************/
