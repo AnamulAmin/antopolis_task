@@ -1,8 +1,30 @@
-# React + Vite
+## Project Setup Guide
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my project! Follow these steps to set up your development environment and start contributing.
 
-Currently, two official plugins are available:
+## Clone the Repository
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Begin by cloning the full repository to your local machine. open the git Bash or vs code terminal. write the code below:
+
+git clone https://github.com/AnamulAmin/go_india_stocks_task.git
+cd OnlineSurbey
+
+## Install Dependencies
+
+Once you are in the project directory, install the required dependencies using npm:
+
+npm install
+This command will download and install all the necessary packages for the project.
+
+## Run the Project
+
+To run the project locally, execute the following command:
+npm run dev
+
+This will start the development server, and you can access the project at http://localhost:5173/.
+
+## Building for Deployment
+
+Before submitting your work, make sure to build the project by running:
+npm run build
+Check for any errors in your updates. If there are no issues, proceed to push your changes to the repository.
