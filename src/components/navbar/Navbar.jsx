@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import soppingCart from "../../assets/images/shopping_cart.png";
 import menuIcon from "../../assets/images/fi_menu.png";
 import { IoMdClose } from "react-icons/io";
+import "./navbar.css";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
@@ -90,15 +91,15 @@ function Navbar() {
             <img src={soppingCart} style={{ width: "1.5rem" }} />
           </li>
           <button className="menu_btn">Sign Up</button>
+          {isMenuOpen ? (
+            <button className="close_icon" onClick={() => setIsMenuOpen(false)}>
+              <IoMdClose style={{ fontSize: "2rem" }} />
+            </button>
+          ) : null}
         </ul>
         <button className="shopping_cart_lg">
           <img src={soppingCart} style={{ width: "1.5rem" }} />
         </button>
-        {isMenuOpen ? (
-          <button className="close_icon" onClick={() => setIsMenuOpen(false)}>
-            <IoMdClose style={{ fontSize: "2rem" }} />
-          </button>
-        ) : null}
       </div>
     </nav>
   );
