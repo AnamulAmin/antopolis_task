@@ -25,7 +25,7 @@ function Categories() {
         // Add background color to the clicked list item
         currentElement.classList.add("active");
       }
-      // Check if the clicked element is a paragraph (P)
+      // Check if the clicked element is a other element
       else {
         currentElement.parentElement.classList.add("active");
       }

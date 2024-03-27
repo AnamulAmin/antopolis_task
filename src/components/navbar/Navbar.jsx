@@ -1,17 +1,21 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import soppingCart from "../../assets/images/shopping_cart.png";
 import menuIcon from "../../assets/images/fi_menu.png";
 import { IoMdClose } from "react-icons/io";
 import "./navbar.css";
+
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu open/close
+  const [isDesktop, setIsDesktop] = useState(false); // State for desktop/mobile view
 
-  let menuStyle;
+  let menuStyle; // Variable to dynamically style menu
 
+  // Determine menu style based on desktop/mobile view
   if (!isDesktop) {
     menuStyle = isMenuOpen ? { width: "100%" } : { width: "0%" };
   }
+
+  // Effect hook to handle menu interaction and screen resizing
   useEffect(() => {
     // Get the sideMenu element
     const menu = document.querySelector(".menu");
@@ -59,7 +63,9 @@ function Navbar() {
     return () => {
       window.removeEventListener("resize", trackScreen);
     };
-  }, []);
+  }, []); // Empty dependency array to run the effect only once
+
+  // JSX for rendering the navigation bar
   return (
     <nav>
       <div className="container navigation">
@@ -91,6 +97,7 @@ function Navbar() {
             <img src={soppingCart} style={{ width: "1.5rem" }} />
           </li>
           <button className="menu_btn">Sign Up</button>
+          {/* Button to close menu */}
           {isMenuOpen ? (
             <button className="close_icon" onClick={() => setIsMenuOpen(false)}>
               <IoMdClose style={{ fontSize: "2rem" }} />

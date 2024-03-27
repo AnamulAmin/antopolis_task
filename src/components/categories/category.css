@@ -146,7 +146,6 @@
 
 /* media part */
 @media (min-width: 768px) {
-  /* hero area start*/
   #categories {
     margin-top: -10rem;
     width: 100%;
@@ -156,5 +155,8 @@
   }
   #categories .category_menu {
     flex-wrap: nowrap;
+  }
+  #categories .swiper-button-prev {
+    left: 27%;
   }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import heroImage from "../../assets/images/banner_img.png";
 import "./hero.css";
-function Hero(props) {
+function Hero() {
   return (
     <div id="hero" className="">
       <div className="hero_bg"></div>
